@@ -15,9 +15,12 @@ import requests
 
 def searchDatabase(startDate, endDate, searchText, stateArray):
 
+    STARTYEAR = 1789
+    ENDYEAR = 1924
+
     if len(sys.argv) >= 5:
 
-        if startDate >= 1789 and endDate <= 1924:
+        if startDate >= STARTYEAR and endDate <= ENDYEAR:
             header = '{:>45}| {:>12}| {:>6}| {:>14}|'.format("Historic Newspaper Usage of " + searchText,
                                                              "STATE","YEAR","MATCHES")
             print(header)
