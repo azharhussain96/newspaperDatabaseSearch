@@ -1,4 +1,13 @@
 #!/usr/bin/python
+# newspaperSearch.py
+#
+# python script that searches the Chronicling America historic newspaper database for a
+# keyword and tallies its apperance each year for all provided states. 
+# input: startDate, endDate, searchText, state(s)
+# output: The script will print a table of counts to stdout
+# usage: ./newspaperSearch.py [startYear] [endYear] [searchWord] [state]...
+#
+# Azhar Hussain, July 18, 2017
 
 import re
 import sys
