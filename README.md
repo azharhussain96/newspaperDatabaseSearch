@@ -1,6 +1,7 @@
 **newspaperDatabaseSearch**
 
-A python script that searches Chronicling America newspaper database for a keyword between a date range.
+A python script that searches Chronicling America newspaper database for a keyword and tallies its 
+apperance each year for all provided states.
 
 usage: ./newspaperDatabaseSearch [startDate] [endDate] [searchWord] [state]...
 
