@@ -12,4 +12,4 @@ The script requires the *re*, *sys*, and *requests* module.
 
 **Sample Output**
 
-![Alt text](.resources/screenshot.png?raw=true "Optional Title")
+![Alt text](resources/screenshot.png?raw=true "Optional Title")
