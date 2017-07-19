@@ -6,7 +6,7 @@ usage: startDate endDate searchWord state...
 
 The program prints to stdout but can be redirected to a file. 
 The script requires the *re*, *sys*, and *requests* module.
-*re* and *sys* have modules in the standard libaries.
+*re* and *sys* are bundled in the standard libaries.
 *requests* can be installed with `sudo pip install requests`
 
 
