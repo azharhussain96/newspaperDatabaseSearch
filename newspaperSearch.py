@@ -17,7 +17,7 @@ def searchDatabase(startDate, endDate, searchText, stateArray):
 
     # Database imposed year range
     STARTYEAR = 1789
-    ENDYEAR = 1924
+    ENDYEAR = 1922
 
     # check if all arguments are present
     if len(sys.argv) >= 5:
