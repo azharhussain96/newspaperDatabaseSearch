@@ -51,7 +51,7 @@ def searchDatabase(startDate, endDate, searchText, stateArray):
                         print(result)
 
         else:
-            sys.stderr.write("error: start date must be >= 1789 AND end date must be <= 1924")
+            sys.stderr.write("error: start date must be >= " + STARTYEAR + " AND end date must be <= " + ENDYEAR)
     else:
         sys.stderr.write("usage: newspaperSearch.py startDate endDate searchWord state...")
 
