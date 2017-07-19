@@ -23,9 +23,13 @@ def searchDatabase(startDate, endDate, searchText, stateArray):
     if len(sys.argv) >= 5:
 
         if startDate >= STARTYEAR and endDate <= ENDYEAR:
-            header = '{:>45}| {:>12}| {:>6}| {:>14}|'.format("Historic Newspaper Usage of " + searchText,
-                                                             "STATE","YEAR","MATCHES")
+            print("---------------------------------------------")
+            title = '|{:^43}| '.format("Newspaper Usage of Term: " + searchText)
+            print(title)
+            print("---------------------------------------------")
+            header = '| {:>14}| {:>8}| {:>16}|'.format("STATE","YEAR","MATCHES")
             print(header)
+            print("---------------------------------------------")
 
             for state in stateArray:
 
@@ -43,12 +47,14 @@ def searchDatabase(startDate, endDate, searchText, stateArray):
                     # if matches
                     if matchObj:
                         matches = matchObj.group(1) + " matches"
-                        result = '{:>45}| {:>12}| {:>6}| {:>14}|'.format("",state, year, matches)
+                        result = '| {:>14}| {:>8}| {:>16}|'.format(state, year, matches)
                         print(result)
                     else:
                         matches = "0 matches"
-                        result = '{:>45}| {:>12}| {:>6}| {:>14}|'.format("",state, year, matches)
+                        result = '| {:>14}| {:>8}| {:>16}|'.format(state, year, matches)
                         print(result)
+
+                print("---------------------------------------------")
 
         else:
             sys.stderr.write("error: start date must be >= " + str(STARTYEAR) + " AND end date must be <= " + str(ENDYEAR))
